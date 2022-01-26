@@ -1,0 +1,29 @@
+{
+    "name": "delgraf/module-autocopyright",
+    "description": "Updates copyright info with current year",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Delgraf",
+            "email": "info@delgraf.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.4.0||~8.1.0",
+        "magento/framework": "*",
+        "magento/module-theme": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Delgraf\\AutoCopyright\\": ""
+        }
+    }
+}
